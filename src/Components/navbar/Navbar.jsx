@@ -1,4 +1,4 @@
-import React from 'react';
+
 import digitools from "../../assets/products/DigiTools.png"
 import { CiShoppingCart } from "react-icons/ci";
 

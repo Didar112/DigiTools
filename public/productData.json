@@ -1,0 +1,90 @@
+[
+  {
+    "id": "p1",
+    "name": "Starter Plan",
+    "description": "Perfect for individuals starting their professional journey.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "Free",
+    "tagType": "new",
+    "features": ["5 Basic templates", "Standard PDF export", "Email support"],
+    "icon": "leaf"
+  },
+  {
+    "id": "p2",
+    "name": "Pro Monthly",
+    "description": "Unlock premium features for your job search.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Unlimited exports", "Priority support"],
+    "icon": "rocket"
+  },
+  {
+    "id": "p3",
+    "name": "Pro Annual",
+    "description": "Save 40% with our most valuable long-term plan.",
+    "price": 149.00,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "best seller",
+    "features": ["100+ templates", "ATS optimization", "Custom domain", "Career coaching session"],
+    "icon": "shield-star"
+  },
+  {
+    "id": "p4",
+    "name": "Enterprise",
+    "description": "Custom solutions for recruitment agencies and teams.",
+    "price": 499.00,
+    "period": "yearly",
+    "tag": "Bulk",
+    "tagType": "new",
+    "features": ["Team management", "White-labeling", "API access", "Dedicated manager"],
+    "icon": "building"
+  },
+  {
+    "id": "p5",
+    "name": "Resume Audit",
+    "description": "One-time professional review of your existing resume.",
+    "price": 49.00,
+    "period": "one-time",
+    "tag": "Top Rated",
+    "tagType": "best seller",
+    "features": ["Expert feedback", "Grammar check", "Formatting polish"],
+    "icon": "search-check"
+  },
+  {
+    "id": "p6",
+    "name": "Basic Monthly",
+    "description": "Essential tools for a quick career update.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["20+ templates", "ATS optimization", "Basic PDF export"],
+    "icon": "zap"
+  },
+  {
+    "id": "p7",
+    "name": "Executive Suite",
+    "description": "High-end branding for C-suite professionals.",
+    "price": 299.00,
+    "period": "one-time",
+    "tag": "Premium",
+    "tagType": "popular",
+    "features": ["LinkedIn makeover", "Executive templates", "Bio writing"],
+    "icon": "crown"
+  },
+  {
+    "id": "p8",
+    "name": "Student Pass",
+    "description": "Discounted access for verified students.",
+    "price": 5.00,
+    "period": "monthly",
+    "tag": "Student Deal",
+    "tagType": "new",
+    "features": ["Internship templates", "PDF export", "Guide to first jobs"],
+    "icon": "graduation-cap"
+  }
+]

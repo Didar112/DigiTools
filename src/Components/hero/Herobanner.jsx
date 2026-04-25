@@ -1,4 +1,4 @@
-import React from 'react';
+
 import bannerImg from "../../assets/products/banner.png"
 import grpIcon from "../../assets/products/Group.png"
 import { CiPlay1 } from "react-icons/ci";
