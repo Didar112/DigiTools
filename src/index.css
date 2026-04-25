@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @import "daisyui/daisyui.css";
+
+
+
+
+
+body{
+     font-family: "Manrope", sans-serif;
+}
