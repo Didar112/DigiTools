@@ -16,14 +16,14 @@ const Herobanner = () => {
     <div>
         <div className="badge badge-soft badge-primary p-4 rounded-full">
             <img src={grpIcon} alt="" />New: AI-Powered Tools Available</div>
-      <h1 className="text-5xl font-extrabold text-[72px]">Supercharge Your Digital Workflow</h1>
+      <h1 className="text-5xl mt-3 font-extrabold text-[72px]">Supercharge Your Digital Workflow</h1>
       <p className="py-6 font-normal text-[#627382]">
         Access premium AI tools, design assets, templates, and productivity <br />
 software—all in one place. Start creating faster today.
 <br />
 Explore Products
       </p>
-      <button className="mr-2 btn btn-primary rounded-full">Get Started</button>
+      <button className="mr-2 btn btn-primary rounded-full">Explore Products</button>
       <button className="btn btn-outline btn-primary rounded-full"><CiPlay1 /> Watch Demo</button>
     </div>
   </div>
