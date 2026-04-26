@@ -15,7 +15,7 @@ const AllCard = ({data}) => {
                return        <div className="card w-96 bg-base-100 shadow-sm">
   <div className="card-body">
     <div className="flex justify-between items-start">
-      <span className="text-3xl">✍️</span>
+      <span className="text-3xl">{product.icon}</span>
       <span className="badge badge-warning badge-sm">{product.badge}</span>
     </div>
     <h2 className="text-xl font-bold mt-2">{product.title}</h2>
