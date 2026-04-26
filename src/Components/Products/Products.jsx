@@ -8,7 +8,7 @@ const Products = ({prodData}) => {
    
 
     return (
-        <div className="container mx-auto border mt-40">
+        <div className="container mx-auto mt-40">
             <AllCard data={data}></AllCard>
         </div>
     );
