@@ -29,7 +29,7 @@ const Products = ({prodData, setAddedcart, addedCart}) => {
                     className={(clickedBtn==="products")?`btn btn-primary rounded-full`:`btn bg-white border-none rounded-full`}>Products</button>
                     <button
                     onClick={()=>setClickedBtn("cart")}
-                    className={(clickedBtn==="cart")?`btn btn-primary rounded-full`:`btn bg-white border-none rounded-full`}>Cart (2)</button>
+                    className={(clickedBtn==="cart")?`btn btn-primary rounded-full`:`btn bg-white border-none rounded-full`}>Cart {addedCart.length>0?`(${addedCart.length})`:"(0)"}</button>
                 </div>
             </div>
             <div className={clickedBtn==="cart"?"hidden":""}>
