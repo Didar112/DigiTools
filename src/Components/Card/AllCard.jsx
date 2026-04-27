@@ -5,6 +5,8 @@ import SingleCard from '../SingleCards/SingleCard';
 
 const AllCard = ({data}) => {
 
+    
+
     const products=data
     return (
 

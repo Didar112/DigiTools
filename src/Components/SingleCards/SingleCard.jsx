@@ -1,6 +1,12 @@
+import { useState } from "react";
 
 
 const SingleCard = ({product}) => {
+
+  const [buybtn, setBuyBtn] = useState(false)
+
+
+
     return (
         <div>
             <div className="card bg-base-100 shadow-sm">
@@ -28,7 +34,7 @@ const SingleCard = ({product}) => {
       ))}
     </ul>
     <div className="mt-6">
-      <button className="btn btn-primary btn-block rounded-full">Buy Now</button>
+      <button onClick={()=>setBuyBtn(true)}  className={"btn btn-primary btn-block rounded-full"} disabled={buybtn}>{(buybtn)?"Added to Cart":"Buy Now"}</button>
     </div>
   </div>
 </div>
