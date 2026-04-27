@@ -1,6 +1,6 @@
 
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Herobanner from './Components/hero/Herobanner'
 import Navbar from './Components/navbar/Navbar'
@@ -18,6 +18,8 @@ const producPromise = async() =>
 
 function App() {
 
+  const [addedCart, setAddedcart] = useState([])
+
   const prodData = producPromise();  
 
   return (
@@ -27,7 +29,7 @@ function App() {
       <Statbanner></Statbanner>
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
 
-      <Products prodData={prodData}></Products>
+      <Products prodData={prodData} setAddedcart={setAddedcart} addedCart={addedCart}></Products>
       </Suspense>
       
     </div>

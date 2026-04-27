@@ -1,9 +1,13 @@
 
 import { use, useState } from "react";
 import AllCard from "../Card/AllCard";
+import NoData from "../NoData/NoData";
+import Cart from "../Cart/Cart";
 
 
-const Products = ({prodData}) => {
+const Products = ({prodData, setAddedcart, addedCart}) => {
+
+    
 
     const [clickedBtn, setClickedBtn]=useState("products")
     
@@ -28,8 +32,12 @@ const Products = ({prodData}) => {
                     className={(clickedBtn==="cart")?`btn btn-primary rounded-full`:`btn bg-white border-none rounded-full`}>Cart (2)</button>
                 </div>
             </div>
-
+            <div className={clickedBtn==="cart"?"hidden":""}>
             <AllCard data={data}></AllCard>
+            </div>
+            <div className={clickedBtn==="products"?"hidden":""}>
+            <Cart setAddedcart={setAddedcart} addedCart={addedCart}></Cart>
+            </div>
         </div>
     );
 };
