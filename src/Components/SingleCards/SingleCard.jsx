@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 
 const SingleCard = ({product, setAddedcart, addedCart}) => {
@@ -16,7 +17,7 @@ const SingleCard = ({product, setAddedcart, addedCart}) => {
       {
         setAddedcart([...addedCart, product])
       }
-      console.log(addedCart)
+      toast.success("Successfully Added to Cart")
   }
 
 

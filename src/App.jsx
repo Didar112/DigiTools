@@ -6,6 +6,7 @@ import Herobanner from './Components/hero/Herobanner'
 import Navbar from './Components/navbar/Navbar'
 import Products from './Components/Products/Products'
 import Statbanner from './Components/Statbanner/Statbanner'
+import { ToastContainer } from 'react-toastify'
 
 
 const producPromise = async() =>
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div>
+      <ToastContainer></ToastContainer>
       <Navbar></Navbar>
       <Herobanner></Herobanner>
       <Statbanner></Statbanner>

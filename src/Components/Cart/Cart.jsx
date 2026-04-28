@@ -1,5 +1,6 @@
 import React from 'react';
 import NoData from '../NoData/NoData';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Cart = ({ setAddedcart, addedCart }) => {
 
@@ -10,10 +11,13 @@ const Cart = ({ setAddedcart, addedCart }) => {
 
   const handleRemove = (id) => {
     setAddedcart(addedCart.filter(item => item.id !== id));
+    toast.error(`Item removed from cart`)
   };
 
   const handleCheckout = () => {
+    
     setAddedcart([])
+    toast.error(`The cart is empty`)
   };
 
   if (addedCart.length === 0) return <NoData />;
@@ -46,13 +50,16 @@ const Cart = ({ setAddedcart, addedCart }) => {
         <span className="text-xl font-bold">${total}</span>
       </div>
 
+
       <button
         type="button"
         onClick={handleCheckout}
         className="btn btn-primary btn-block rounded-full"
       >
+        
         Proceed To Checkout
       </button>
+      
     </div>
   );
 };
