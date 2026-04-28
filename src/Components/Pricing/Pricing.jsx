@@ -16,7 +16,7 @@ const Pricing = () => {
         <div className="flex m-4 md:m-0 lg:flex-row flex-col gap-10 mt-10 items-stretch">
 
     
-          <div className="flex-1 relative bg-white rounded-3xl shadow-lg p-10 flex flex-col">
+          <div className="flex-1 relative bg-[#F9FAFC] rounded-3xl shadow-lg p-10 flex flex-col">
             <h3 className="text-2xl font-bold text-[#101727]">Starter</h3>
             <p className="text-sm mt-1 mb-6 text-[#627382]">Perfect for getting started</p>
             <div className="mb-6">
@@ -35,7 +35,7 @@ const Pricing = () => {
           </div>
 
       
-          <div className="flex-1 relative bg-violet-600 rounded-3xl shadow-lg p-10 flex flex-col">
+          <div className="flex-1 relative bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl shadow-lg p-10 flex flex-col">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
               <div className="badge rounded-full bg-[#FEF3C6] text-[#BB4D00] text-[14px] font-semibold px-4 py-3">Most Popular</div>
             </div>
@@ -59,7 +59,7 @@ const Pricing = () => {
           </div>
 
       
-          <div className="flex-1 relative bg-white rounded-3xl shadow-lg p-10 flex flex-col">
+          <div className="flex-1 relative bg-[#F9FAFC] rounded-3xl shadow-lg p-10 flex flex-col">
             <h3 className="text-2xl font-bold text-[#101727]">Enterprise</h3>
             <p className="text-sm mt-1 mb-6 text-[#627382]">For teams and businesses</p>
             <div className="mb-6">

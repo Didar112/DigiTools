@@ -24,7 +24,7 @@ const SingleCard = ({product, setAddedcart, addedCart}) => {
 
     return (
         <div>
-            <div className="card bg-base-100 shadow-sm">
+            <div className="card h-100 bg-base-100 shadow-sm">
   <div className="card-body">
     <div className="flex justify-between items-start">
       <span className="text-3xl">{product.icon}</span>
