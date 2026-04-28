@@ -16,7 +16,7 @@ const Products = ({prodData}) => {
    
 
     return (
-        <div className="container mx-auto mt-30">
+        <div className="container mx-auto mt-30 p-3">
 
             <div>
                 <h2 className="font-extrabold text-[48px] text-center mb-8">Premium Digital Tools</h2>

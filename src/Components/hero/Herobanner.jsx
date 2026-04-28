@@ -11,9 +11,9 @@ const Herobanner = () => {
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img
       src={bannerImg}
-      className="max-w-sm rounded-lg shadow-2xl"
+      className="max-w-sm rounded-lg shadow-2xl mb-5 md:mb-0"
     />
-    <div>
+    <div className="pb-5 md:pb-0">
         <div className="badge badge-soft badge-primary p-4 rounded-full">
             <img src={grpIcon} alt="" />New: AI-Powered Tools Available</div>
       <h1 className="text-5xl mt-3 font-extrabold text-[72px]">Supercharge Your Digital Workflow</h1>
