@@ -10,6 +10,7 @@ import { ToastContainer } from 'react-toastify'
 import Started from './Components/StartedSection/Started'
 import Pricing from './Components/Pricing/Pricing'
 import Workflow from './Components/Workflow/Workflow'
+import Footer from './Components/Footer/Footer'
 
 
 const producPromise = async() =>
@@ -39,6 +40,7 @@ function App() {
       <Started></Started>
       <Pricing></Pricing>
       <Workflow></Workflow>
+      <Footer></Footer>
       
     </div>
    
