@@ -7,6 +7,7 @@ import Navbar from './Components/navbar/Navbar'
 import Products from './Components/Products/Products'
 import Statbanner from './Components/Statbanner/Statbanner'
 import { ToastContainer } from 'react-toastify'
+import Started from './Components/StartedSection/Started'
 
 
 const producPromise = async() =>
@@ -33,6 +34,7 @@ function App() {
 
       <Products prodData={prodData} ></Products>
       </Suspense>
+      <Started></Started>
       
     </div>
    

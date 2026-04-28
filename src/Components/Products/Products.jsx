@@ -32,7 +32,7 @@ const Products = ({prodData}) => {
                 </div>
             </div>
             <div className={clickedBtn==="cart"?"hidden":""}>
-            <AllCard addedCart={addedCart} setAddedcart={setAddedcart} data={data}></AllCard>
+            <AllCard addedCart={addedCart} setAddedcart={setAddedcart} data={data}></AllCard>        
             </div>
             <div className={clickedBtn==="products"?"hidden":""}>
             <Cart setAddedcart={setAddedcart} addedCart={addedCart}></Cart>
