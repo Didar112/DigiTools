@@ -6,10 +6,10 @@ const Footer = () => {
     <footer className="bg-[#0d1117] text-white px-10 pt-16 pb-6">
       <div className="container mx-auto">
 
-        {/* Main Footer */}
+  
         <div className="footer grid-cols-2 md:grid-cols-5 mb-12">
 
-          {/* Brand */}
+
           <div className="col-span-2 md:col-span-1 max-w-xs">
             <h2 className="text-2xl font-extrabold text-white mb-3">DigiTools</h2>
             <p className="text-sm text-gray-400 leading-relaxed">
@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Product */}
+          
           <nav>
             <h6 className="footer-title text-white opacity-100">Product</h6>
             <a className="link link-hover text-gray-400 text-sm">Features</a>
@@ -26,7 +26,6 @@ const Footer = () => {
             <a className="link link-hover text-gray-400 text-sm">Integrations</a>
           </nav>
 
-          {/* Company */}
           <nav>
             <h6 className="footer-title text-white opacity-100">Company</h6>
             <a className="link link-hover text-gray-400 text-sm">About</a>
@@ -35,7 +34,6 @@ const Footer = () => {
             <a className="link link-hover text-gray-400 text-sm">Press</a>
           </nav>
 
-          {/* Resources */}
           <nav>
             <h6 className="footer-title text-white opacity-100">Resources</h6>
             <a className="link link-hover text-gray-400 text-sm">Documentation</a>
@@ -44,17 +42,17 @@ const Footer = () => {
             <a className="link link-hover text-gray-400 text-sm">Contact</a>
           </nav>
 
-          {/* Social Links */}
+      
           <div>
             <h6 className="footer-title text-white opacity-100">Social Links</h6>
             <div className="flex gap-3 mt-1">
-              <a className="btn btn-circle btn-sm bg-[#1a2030] border-none text-white hover:bg-violet-600">
+              <a className="btn btn-circle btn-sm bg-[#ffff] border-none text-black ">
                 <FaInstagram size={16} />
               </a>
-              <a className="btn btn-circle btn-sm bg-[#1a2030] border-none text-white hover:bg-violet-600">
+              <a className="btn btn-circle btn-sm bg-[#ffff] border-none text-black ">
                 <FaFacebook size={16} />
               </a>
-              <a className="btn btn-circle btn-sm bg-[#1a2030] border-none text-white hover:bg-violet-600">
+              <a className="btn btn-circle btn-sm bg-[#ffff] border-none text-black ">
                 <FaXTwitter size={16} />
               </a>
             </div>
@@ -64,7 +62,7 @@ const Footer = () => {
 
         <hr className="border-gray-700 mb-6" />
 
-        {/* Bottom Bar */}
+        
         <div className="footer footer-center md:footer flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>© 2026 Digitools. All rights reserved.</p>
           <div className="flex gap-6">
