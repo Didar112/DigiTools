@@ -1,9 +1,23 @@
 import { useState } from "react";
 
 
-const SingleCard = ({product}) => {
+const SingleCard = ({product, setAddedcart, addedCart}) => {
 
   const [buybtn, setBuyBtn] = useState(false)
+
+  const onBuyClickHandler=()=>{
+      setBuyBtn(true);
+
+      const isProdExist = addedCart.some(p => p.id === product.id);
+
+      if(isProdExist){
+        return
+      }else if(!isProdExist)
+      {
+        setAddedcart([...addedCart, product])
+      }
+      console.log(addedCart)
+  }
 
 
 
@@ -34,7 +48,7 @@ const SingleCard = ({product}) => {
       ))}
     </ul>
     <div className="mt-6">
-      <button onClick={()=>setBuyBtn(true)}  className={"btn btn-primary btn-block rounded-full"} disabled={buybtn}>{(buybtn)?"Added to Cart":"Buy Now"}</button>
+      <button onClick={onBuyClickHandler}  className={"btn btn-primary btn-block rounded-full"} disabled={buybtn}>{(buybtn)?"Added to Cart":"Buy Now"}</button>
     </div>
   </div>
 </div>

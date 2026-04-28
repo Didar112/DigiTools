@@ -3,7 +3,7 @@ import SingleCard from '../SingleCards/SingleCard';
 
 
 
-const AllCard = ({data}) => {
+const AllCard = ({data, addedCart, setAddedcart}) => {
 
     
 
@@ -16,7 +16,7 @@ const AllCard = ({data}) => {
         {
             products.map(product=>{
 
-               return  <SingleCard key={product.id} product={product}></SingleCard>
+               return  <SingleCard addedCart={addedCart} setAddedcart={setAddedcart} key={product.id} product={product}></SingleCard>
             })
         }
 

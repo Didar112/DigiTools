@@ -18,7 +18,7 @@ const producPromise = async() =>
 
 function App() {
 
-  const [addedCart, setAddedcart] = useState([])
+  
 
   const prodData = producPromise();  
 
@@ -29,7 +29,7 @@ function App() {
       <Statbanner></Statbanner>
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
 
-      <Products prodData={prodData} setAddedcart={setAddedcart} addedCart={addedCart}></Products>
+      <Products prodData={prodData} ></Products>
       </Suspense>
       
     </div>

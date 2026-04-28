@@ -1,17 +1,16 @@
 
 import { use, useState } from "react";
 import AllCard from "../Card/AllCard";
-import NoData from "../NoData/NoData";
 import Cart from "../Cart/Cart";
 
 
-const Products = ({prodData, setAddedcart, addedCart}) => {
+const Products = ({prodData}) => {
 
-    
+    const [addedCart, setAddedcart] = useState([])
 
     const [clickedBtn, setClickedBtn]=useState("products")
     
-    console.log(clickedBtn)
+    
 
    const data = use(prodData)
    
@@ -33,7 +32,7 @@ const Products = ({prodData, setAddedcart, addedCart}) => {
                 </div>
             </div>
             <div className={clickedBtn==="cart"?"hidden":""}>
-            <AllCard data={data}></AllCard>
+            <AllCard addedCart={addedCart} setAddedcart={setAddedcart} data={data}></AllCard>
             </div>
             <div className={clickedBtn==="products"?"hidden":""}>
             <Cart setAddedcart={setAddedcart} addedCart={addedCart}></Cart>
